@@ -1,5 +1,13 @@
 # antigaspi_lycee
 
+Une appli pour limiter le gaspillage à la cantine du lycée Léonard e Vinci à Villefontaine.
+
+## Utilisation
+
+:warning: Cette appli est encore en projet, elle n'est même pas utilisable.
+
+***
+
 A new Flutter project.
 
 ## Getting Started
