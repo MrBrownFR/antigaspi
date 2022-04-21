@@ -1,56 +1,47 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    title: 'AntiGaspi LDV',
+    home: Scaffold(
+        appBar: AppBar(
+          title: const Text('AntiGaspi LDV'),
+        ),
+        body: const Align(alignment: Alignment.bottomCenter, child: AppHome())),
+    theme: ThemeData(
+      primarySwatch: Colors.red,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+    ),
+    darkTheme: ThemeData.dark(),
+    themeMode: ThemeMode.light,
+  ));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class AppHome extends StatelessWidget {
+  const AppHome({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.deepPurple,
-      ),
-      home: const MyHomePage(title: 'AntiGaspi'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    // Home screen with hello world
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text(
-              'Mdrrrr!',
-            ),
-          ],
+    return BottomNavigationBar(
+      items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          label: 'Accueil',
         ),
-      ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.add),
+          label: 'Ajouter',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.search),
+          label: 'Rechercher',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.settings),
+          label: 'Paramètres',
+        ),
+      ],
     );
   }
 }
