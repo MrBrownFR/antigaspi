@@ -1,20 +1,27 @@
+import 'package:antigaspi_lycee/Pages/home.dart';
 import 'package:flutter/material.dart';
-import 'Pages/home.dart';
-import 'Pages/settings.dart';
+import 'Tools/add_button.dart';
+import 'Tools/settings_button.dart';
 
 void main() {
   runApp(MaterialApp(
     title: 'AntiGaspi LDV',
     home: Scaffold(
-        appBar: AppBar(
-          title: const Text('AntiGaspi LDV'),
-        ),
-        body: const Align(alignment: Alignment.bottomCenter, child: AppHome())),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('AntiGaspi LDV'),
+        actions: [
+          settingsButton(),
+        ],
+      ),
+      body: const HomePage(),
+      floatingActionButton: addButton(),
+    ),
     theme: ThemeData(
       primarySwatch: Colors.red,
       visualDensity: VisualDensity.adaptivePlatformDensity,
     ),
     darkTheme: ThemeData.dark(),
-    themeMode: ThemeMode.light,
+    themeMode: ThemeMode.system,
   ));
 }
