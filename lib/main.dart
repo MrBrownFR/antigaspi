@@ -1,4 +1,4 @@
-import 'package:antigaspi_lycee/Pages/home.dart';
+import 'package:antigaspi/Pages/home.dart';
 import 'package:flutter/material.dart';
 import 'Tools/add_button.dart';
 import 'Tools/settings_button.dart';

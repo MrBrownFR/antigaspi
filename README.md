@@ -1,24 +1,36 @@
-# antigaspi_lycee
+# AntiGaspi
 
-Une appli pour limiter le gaspillage à la cantine du lycée Léonard e Vinci à Villefontaine.
+Une appli pour limiter le gaspillage à la cantine du lycée Léonard de Vinci à Villefontaine.
 
 ## Utilisation
 
-:warning: Cette appli est encore en projet, elle n'est même pas utilisable.
+> :warning: Cette appli est encore en projet, elle n'est même pas utilisable. Une MVP va sortir le plus tôt possible afin que vous puissiez voir à quoi ressemblera l'application.
+
+Sur cette application, vous pouvez effectuer les opération suivantes :
+
+- Consulter et réserver les plats non finis des autres élèves
+- Ajouter les plats que vous n'avez pas terminé
+- Consulter les menus de la semaine
+- Activer / désactiver les notifications
 
 ***
 
-A new Flutter project.
+## Roadmap
 
-## Getting Started
+### Priorité élevée
 
-This project is a starting point for a Flutter application.
+- [ ] Produire une version stable de l'application
+- [ ] Produire une version sécurisée de l'application
 
-A few resources to get you started if this is your first Flutter project:
+### Priorité moyenne
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [ ] Déployer l'application sur l'App Store (iOS)
+  - [ ] Respecter les [principes de design iOS (version anglaise)](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+- [ ] Déployer l'application sur le Play Store au lieu d'utiliser des fichiers .apk (Android)
+  - [ ] Respecter les [principes de design Android (version anglaise)](https://developer.android.com/design)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Priorité faible
+
+- [ ] Utiliser des designs natifs :
+  - [ ] [Material You 3](https://m3.material.io/) pour Android
+  - [ ] [Cupertino](https://docs.flutter.dev/development/ui/widgets/cupertino) pour iOS
