@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../Pages/new_plate.dart';
 
 class addButton extends StatefulWidget {
   addButton({Key? key}) : super(key: key);
@@ -10,13 +11,19 @@ class addButton extends StatefulWidget {
 class _addButtonState extends State<addButton> {
   @override
   Widget build(BuildContext context) {
+    // Affichage un bouton qui flotte au-dessus du body actuel
     return FloatingActionButton(
-      onPressed: () {},
+      onPressed: () {
+        // Navigue vers la page NewPlate
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const NewPlate(),
+          ),
+        );
+      },
+      // Affiche l'icône du bouton +
       child: const Icon(Icons.add),
     );
   }
-}
-
-void onPressed(args) {
-  // Code to execute when FloatingActionButton is clicked
 }

@@ -11,9 +11,12 @@ class settingsButton extends StatefulWidget {
 class _settingsButtonState extends State<settingsButton> {
   @override
   Widget build(BuildContext context) {
+    // Affiche un bouton dans la barre de titre
     return IconButton(
+      // Affiche l'icône de paramètres
       icon: const Icon(Icons.settings),
       onPressed: () {
+        // Navigue vers la page Settings
         Navigator.push(
           context,
           MaterialPageRoute(
