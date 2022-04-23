@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfire_ui/auth.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -6,11 +7,11 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Paramètres'),
-      ),
-      body: const Text('Hello Settings'),
-    );
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text('Paramètres'),
+        ),
+        body: AppleSignInIconButton());
+    ;
   }
 }
