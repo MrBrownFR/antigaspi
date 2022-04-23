@@ -1,5 +1,6 @@
+import 'package:antigaspi/Tools/Settings/notifications_toggle.dart';
+import 'package:antigaspi/Tools/Settings/theme_toggle.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterfire_ui/auth.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -11,7 +12,12 @@ class SettingsPage extends StatelessWidget {
           centerTitle: true,
           title: const Text('Paramètres'),
         ),
-        body: AppleSignInIconButton());
-    ;
+        body: Column(
+          children: [
+            themeToggle(),
+            const Divider(),
+            notifToggle(),
+          ],
+        ));
   }
 }
