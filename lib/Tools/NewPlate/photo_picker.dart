@@ -27,15 +27,32 @@ class _photoPickerState extends State<photoPicker> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: image != null
-          ? Image.file(image!)
-          : ElevatedButton(
+    return image != null
+        ? SizedBox(
+            child: Image.file(image!),
+            height: 300,
+            width: 300,
+          )
+        : Center(
+            child: ElevatedButton(
               onPressed: () {
                 pickImage(ImageSource.camera);
               },
-              child: const Text('Ajouter une photo'),
+              child: SizedBox(
+                width: 200,
+                child: Row(
+                  children: const <Widget>[
+                    Icon(Icons.camera_alt_outlined),
+                    Expanded(
+                      child: Text(
+                        'Ajouter une photo',
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
-    );
+          );
   }
 }

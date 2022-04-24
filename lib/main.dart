@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
+    // ! Cette application ne peut afficher que des widgets Android Material
     MaterialApp(
       title: 'AntiGaspi LDV',
       home: const HomePage(),

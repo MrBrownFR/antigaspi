@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:antigaspi/Tools/add_button.dart';
-import 'package:antigaspi/Tools/settings_button.dart';
+import 'package:antigaspi/Tools/Home/add_button.dart';
+import 'package:antigaspi/Tools/Home/settings_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
+  // * This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return Scaffold(

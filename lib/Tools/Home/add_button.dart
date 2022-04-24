@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../Pages/NewPlate/main_page.dart';
+import '../../Pages/new_plate.dart';
 
 class addButton extends StatefulWidget {
   addButton({Key? key}) : super(key: key);

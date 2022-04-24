@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../Pages/settings.dart';
+import '../../Pages/settings.dart';
 
 class settingsButton extends StatefulWidget {
   settingsButton({Key? key}) : super(key: key);
