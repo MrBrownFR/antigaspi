@@ -39,6 +39,6 @@ Si une âme charitable veut bien se proposer pour réécrire l'application avec 
 
 ### Priorité faible
 
-- [-] Utiliser des designs natifs :
-  - [-] [Material You 3](https://m3.material.io/) pour Android
-  - [-] [Cupertino](https://docs.flutter.dev/development/ui/widgets/cupertino) pour iOS
+- [ ] Utiliser des designs natifs :
+  - [ ] [Material You 3](https://m3.material.io/) pour Android
+  - [ ] [Cupertino](https://docs.flutter.dev/development/ui/widgets/cupertino) pour iOS
