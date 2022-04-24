@@ -10,11 +10,14 @@ class SpotPicker extends StatefulWidget {
 class _SpotPickerState extends State<SpotPicker> {
   @override
   Widget build(BuildContext context) {
-    return Form(
-      child: TextFormField(
-        decoration: const InputDecoration(
-          label: Text('Où êtes-vous assis ?'),
-          // TODO: Vérifier le contenu du champ
+    return SizedBox(
+      width: 210,
+      child: Form(
+        child: TextFormField(
+          decoration: const InputDecoration(
+            label: Text('Où êtes-vous assis ?'),
+            // TODO: Vérifier le contenu du champ
+          ),
         ),
       ),
     );

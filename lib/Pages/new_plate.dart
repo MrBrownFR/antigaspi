@@ -14,12 +14,18 @@ class NewPlate extends StatelessWidget {
         title: const Text('Ajouter un nouveau plat'),
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          photoPicker(),
-          TypePlatePicker(),
-          SpotPicker(),
-        ],
+      body: Center(
+        child: Container(
+          width: 0.5 * MediaQuery.of(context).size.width,
+          margin: const EdgeInsets.symmetric(vertical: 100),
+          child: ListView(
+            children: [
+              photoPicker(),
+              TypePlatePicker(),
+              SpotPicker(),
+            ],
+          ),
+        ),
       ),
       floatingActionButton: const SendButton(),
     );
