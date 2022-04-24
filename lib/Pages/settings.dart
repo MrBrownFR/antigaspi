@@ -13,9 +13,9 @@ class SettingsPage extends StatelessWidget {
           title: const Text('Paramètres'),
         ),
         body: Column(
-          children: [
+          children: const [
             themeToggle(),
-            const Divider(),
+            Divider(),
             notifToggle(),
           ],
         ));

@@ -1,8 +1,10 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class themeToggle extends StatefulWidget {
-  themeToggle({Key? key}) : super(key: key);
+  const themeToggle({Key? key}) : super(key: key);
 
   @override
   State<themeToggle> createState() => _themeToggleState();

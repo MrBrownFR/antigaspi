@@ -1,8 +1,10 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import '../../Pages/settings.dart';
 
 class settingsButton extends StatefulWidget {
-  settingsButton({Key? key}) : super(key: key);
+  const settingsButton({Key? key}) : super(key: key);
 
   @override
   State<settingsButton> createState() => _settingsButtonState();

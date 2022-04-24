@@ -1,8 +1,10 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import '../../Pages/new_plate.dart';
 
 class addButton extends StatefulWidget {
-  addButton({Key? key}) : super(key: key);
+  const addButton({Key? key}) : super(key: key);
 
   @override
   State<addButton> createState() => _addButtonState();

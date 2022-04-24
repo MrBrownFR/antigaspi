@@ -12,12 +12,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text('AntiGaspi LDV'),
-        actions: [
+        actions: const [
           settingsButton(),
         ],
       ),
       body: const Text('Hello Home'),
-      floatingActionButton: addButton(),
+      floatingActionButton: const addButton(),
     );
   }
 }

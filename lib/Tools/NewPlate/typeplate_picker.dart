@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 class TypePlatePicker extends StatefulWidget {
-  TypePlatePicker({Key? key}) : super(key: key);
+  const TypePlatePicker({Key? key}) : super(key: key);
 
   @override
   State<TypePlatePicker> createState() => _TypePlatePickerState();
 }
 
 class _TypePlatePickerState extends State<TypePlatePicker> {
+  // ignore: prefer_typing_uninitialized_variables
   var plateType;
 
   @override
@@ -50,6 +51,5 @@ class _TypePlatePickerState extends State<TypePlatePicker> {
       },
       value: plateType,
     );
-    ;
   }
 }

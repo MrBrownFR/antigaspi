@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SpotPicker extends StatefulWidget {
-  SpotPicker({Key? key}) : super(key: key);
+  const SpotPicker({Key? key}) : super(key: key);
 
   @override
   State<SpotPicker> createState() => _SpotPickerState();

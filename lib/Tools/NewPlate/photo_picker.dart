@@ -1,10 +1,13 @@
+// ignore_for_file: camel_case_types
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 
 class photoPicker extends StatefulWidget {
-  photoPicker({Key? key}) : super(key: key);
+  const photoPicker({Key? key}) : super(key: key);
 
   @override
   State<photoPicker> createState() => _photoPickerState();
@@ -21,7 +24,9 @@ class _photoPickerState extends State<photoPicker> {
       final imageTemporary = File(image.path);
       setState(() => this.image = imageTemporary);
     } on PlatformException catch (e) {
-      print("Erreur lors de la capture de l'image : $e");
+      if (kDebugMode) {
+        print("Erreur lors de la capture de l'image : $e");
+      }
     }
   }
 
