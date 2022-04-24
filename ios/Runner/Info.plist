@@ -43,5 +43,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSCameraUsageDescription</key>
+	<string>Vous devez autoriser l'accès à la caméra pour pouvoir utiliser l'application.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Vous devez autoriser l'accès à la bibliothèque photo pour pouvoir utiliser l'application.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Vous devez autoriser l'accès au microphone pour pouvoir utiliser l'application.</string>
 </dict>
 </plist>

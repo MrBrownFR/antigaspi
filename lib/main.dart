@@ -1,22 +1,19 @@
 import 'package:antigaspi/Pages/home.dart';
 import 'package:flutter/material.dart';
 
-import 'package:firebase_core/firebase_core.dart';
-import 'Backend/firebase_options.dart';
-
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(MaterialApp(
-    title: 'AntiGaspi LDV',
-    home: const HomePage(),
-    theme: ThemeData(
-      primarySwatch: Colors.red,
-      visualDensity: VisualDensity.adaptivePlatformDensity,
+  runApp(
+    // ! Cette application ne peut afficher que des widgets Android Material
+    MaterialApp(
+      title: 'AntiGaspi LDV',
+      home: const HomePage(),
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.system,
     ),
-    darkTheme: ThemeData.dark(),
-    themeMode: ThemeMode.system,
-  ));
+  );
 }

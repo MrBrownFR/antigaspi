@@ -1,3 +1,7 @@
+import 'package:antigaspi/Tools/NewPlate/photo_picker.dart';
+import 'package:antigaspi/Tools/NewPlate/typeplate_picker.dart';
+import 'package:antigaspi/Tools/NewPlate/spot_picker.dart';
+import 'package:antigaspi/Tools/NewPlate/send_button.dart';
 import 'package:flutter/material.dart';
 
 class NewPlate extends StatelessWidget {
@@ -7,10 +11,17 @@ class NewPlate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         title: const Text('Ajouter un nouveau plat'),
+        centerTitle: true,
       ),
-      body: const Text('Hello NewPlate'),
+      body: Column(
+        children: [
+          photoPicker(),
+          TypePlatePicker(),
+          SpotPicker(),
+        ],
+      ),
+      floatingActionButton: const SendButton(),
     );
   }
 }
