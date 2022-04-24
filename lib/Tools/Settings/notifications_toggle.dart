@@ -25,14 +25,15 @@ class _notifToggleState extends State<notifToggle> {
         const Expanded(
           child: Text('Notifications'),
         ),
-        Switch(
-            value: _notif,
-            onChanged: (bool value) {
-              setState(() {
-                _notif = value;
-                _setNotif();
-              });
-            }),
+        Switch.adaptive(
+          value: _notif,
+          onChanged: (bool value) {
+            setState(() {
+              _notif = value;
+              _setNotif();
+            });
+          },
+        ),
       ],
     );
   }

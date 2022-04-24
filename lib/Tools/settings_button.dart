@@ -24,6 +24,7 @@ class _settingsButtonState extends State<settingsButton> {
           ),
         );
       },
+      tooltip: 'Paramètres',
     );
   }
 }
