@@ -39,7 +39,6 @@ class _photoPickerState extends State<photoPicker> {
                 pickImage(ImageSource.camera);
               },
               child: SizedBox(
-                width: 200,
                 child: Row(
                   children: const <Widget>[
                     Icon(Icons.camera_alt_outlined),
