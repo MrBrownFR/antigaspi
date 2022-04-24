@@ -19,18 +19,18 @@ Sur cette application, vous pouvez effectuer les opération suivantes :
 
 ### Priorité élevée
 
-- [ ] Produire une version stable de l'application
-- [ ] Produire une version sécurisée de l'application
+- [-] Produire une version stable de l'application
+- [-] Produire une version sécurisée de l'application
 
 ### Priorité moyenne
 
-- [ ] Déployer l'application sur l'App Store (iOS)
-  - [ ] Respecter les [principes de design iOS (version anglaise)](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
-- [ ] Déployer l'application sur le Play Store au lieu d'utiliser des fichiers .apk (Android)
-  - [ ] Respecter les [principes de design Android (version anglaise)](https://developer.android.com/design)
+- [-] Déployer l'application sur l'App Store (iOS)
+  - [-] Respecter les [principes de design iOS (version anglaise)](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+- [-] Déployer l'application sur le Play Store au lieu d'utiliser des fichiers .apk (Android)
+  - [-] Respecter les [principes de design Android (version anglaise)](https://developer.android.com/design)
 
 ### Priorité faible
 
-- [ ] Utiliser des designs natifs :
-  - [ ] [Material You 3](https://m3.material.io/) pour Android
-  - [ ] [Cupertino](https://docs.flutter.dev/development/ui/widgets/cupertino) pour iOS
+- [-] Utiliser des designs natifs :
+  - [-] [Material You 3](https://m3.material.io/) pour Android
+  - [-] [Cupertino](https://docs.flutter.dev/development/ui/widgets/cupertino) pour iOS

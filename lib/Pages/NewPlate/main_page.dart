@@ -11,7 +11,7 @@ class NewPlate extends StatelessWidget {
         title: const Text('Ajouter un nouveau plat'),
         centerTitle: true,
       ),
-      body: TakePictureScreen(),
+      body: photoPicker(),
     );
   }
 }
