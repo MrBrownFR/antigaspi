@@ -29,6 +29,49 @@
             {
               "client_id": "796656861989-l9rr9qs0k4s60vh806ouc7pki4lfq11c.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "796656861989-up3ncbctl2r1q5fvo53g74rfnvclnkba.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.antigaspiLycee"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796656861989:android:6f85d66a1784587a1dd0cc",
+        "android_client_info": {
+          "package_name": "com.mrbrownfr.antigaspi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796656861989-l9rr9qs0k4s60vh806ouc7pki4lfq11c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL9V18jucchRR58kezpGJzwh5mTQrzrGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796656861989-l9rr9qs0k4s60vh806ouc7pki4lfq11c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "796656861989-up3ncbctl2r1q5fvo53g74rfnvclnkba.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.antigaspiLycee"
+              }
             }
           ]
         }

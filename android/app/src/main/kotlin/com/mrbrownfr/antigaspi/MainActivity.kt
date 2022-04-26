@@ -1,4 +1,4 @@
-package com.example.antigaspi_lycee
+package com.mrbrownfr.antigaspi
 
 import io.flutter.embedding.android.FlutterActivity
 

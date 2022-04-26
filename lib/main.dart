@@ -8,12 +8,29 @@ void main() {
     MaterialApp(
       title: 'AntiGaspi LDV',
       home: const HomePage(),
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      darkTheme: ThemeData.dark(),
+      theme: _themeLight,
+      darkTheme: _themeDark,
       themeMode: ThemeMode.system,
     ),
   );
 }
+
+final ThemeData _themeLight = ThemeData(
+  colorScheme: ColorScheme.fromSwatch(
+    primarySwatch: Colors.red,
+    brightness: Brightness.light,
+  ),
+  toggleableActiveColor: Colors.red,
+  visualDensity: VisualDensity.adaptivePlatformDensity,
+  useMaterial3: true,
+);
+
+final ThemeData _themeDark = ThemeData(
+  colorScheme: ColorScheme.fromSwatch(
+    primarySwatch: Colors.red,
+    primaryColorDark: Colors.red,
+    brightness: Brightness.dark,
+  ),
+  visualDensity: VisualDensity.adaptivePlatformDensity,
+  useMaterial3: true,
+);

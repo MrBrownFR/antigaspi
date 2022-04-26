@@ -48,8 +48,19 @@ class _themeToggleState extends State<themeToggle> {
           onChanged: (String? value) {
             setState(() {
               _thememode = value.toString();
-              _setTheme();
             });
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                // TODO : implémenter le changement de thème
+                content: const Text(
+                    "La fonctionnalité n'est pas encore implémentée"),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              ),
+            );
+            _setTheme();
           },
           value: _thememode,
         ),
