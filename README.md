@@ -15,6 +15,11 @@ Sur cette application, vous pouvez effectuer les opération suivantes :
 
 Pour cela, un wiki est mis à disposition. Ne vous inqiétez pas, il arrive bientôt :wink:
 
+## Installation
+
+- Sur Android : éxécutez le fichier .apk disposible dans la section Release (:warning: pensez à autoriser l'installation depuis des sources inconnues sur votre appareil)
+- Sur iOS : une webapp est disponible en attendant une futre publication sur l'App Store
+
 ***Ce document est susceptible d'évoluer, merci d'y prêter attention. De plus, comme je suis tout seul à travailler sur le projet, merci de respecter mes efforts et de ne critiquer que positivement, merci. Signé MrBrownFR***
 
 ## TODO
