@@ -16,8 +16,8 @@ class NewPlate extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          width: 0.5 * MediaQuery.of(context).size.width,
-          margin: const EdgeInsets.symmetric(vertical: 100),
+          margin: const EdgeInsets.symmetric(vertical: 100, horizontal: 20),
+          constraints: const BoxConstraints(maxWidth: 500),
           child: ListView(
             children: const [
               photoPicker(),
