@@ -1,11 +1,12 @@
 import 'package:antigaspi/Pages/home.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
-    // ! Cette application ne peut afficher que des widgets Android Material
     MaterialApp(
+      // ! Cette application ne peut afficher que des widgets Android Material
       title: 'AntiGaspi LDV',
       home: const HomePage(),
       theme: _themeLight,
@@ -34,3 +35,23 @@ final ThemeData _themeDark = ThemeData(
   visualDensity: VisualDensity.adaptivePlatformDensity,
   useMaterial3: true,
 );
+
+getTheme() {
+  SharedPreferences prefs =
+      SharedPreferences.getInstance() as SharedPreferences;
+  String mode = prefs.getString('thememode') ?? 'système';
+  return mode;
+}
+
+ThemeMode thememode(String mode) {
+  switch (mode) {
+    case 'système':
+      return ThemeMode.system;
+    case 'clair':
+      return ThemeMode.light;
+    case 'sombre':
+      return ThemeMode.dark;
+    default:
+      return ThemeMode.system;
+  }
+}
